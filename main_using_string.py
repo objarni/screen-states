@@ -28,14 +28,14 @@ def mainloop(screen, font):
         # Render
         if state == "start":
             screen.fill(BLACK)
-            text_surface = font.render("START SCREEN", True, WHITE)
+            text_surface = font.render("START SCREEN - press Space", True, WHITE)
             text_rect = text_surface.get_rect()
             text_rect.midtop = (400, 200)
             screen.blit(text_surface, text_rect)
 
         if state == "end":
             screen.fill(BLACK)
-            text_surface = font.render("END SCREEN", True, WHITE)
+            text_surface = font.render("END SCREEN - press Escape", True, WHITE)
             text_rect = text_surface.get_rect()
             text_rect.midtop = (400, 200)
             screen.blit(text_surface, text_rect)
